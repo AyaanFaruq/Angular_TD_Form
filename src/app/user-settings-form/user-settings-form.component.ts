@@ -8,7 +8,7 @@ import { UserSettings } from '../data/user-settings';
   styleUrls: ['./user-settings-form.component.css']
 })
 export class UserSettingsFormComponent implements OnInit {
-  
+
   orginalUserSettings: UserSettings ={
     name: 'Ayaan',
     emailOffers:true,
@@ -17,7 +17,8 @@ export class UserSettingsFormComponent implements OnInit {
     notes: 'Here are some notes...'
   };
 
-  userSettings: UserSettings ={    ...this.orginalUserSettings   };
+  userSettings: UserSettings ={    ...this.orginalUserSettings   }; 
+  //  ... The Spread operator will take orginalUserSettings intouser Settings.This is a way to copy top level properties
 
 
 
